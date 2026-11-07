@@ -1,0 +1,8 @@
+# I testi privati non entrano mai in git.
+dati/
+dati-*/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store

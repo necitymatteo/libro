@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Il mio libro</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/statici/app.css">
+</head>
+<body>
+  <aside class="barra">
+    <div class="barra-testa">
+      <a id="titolo" class="titolo-libro" href="#libro">Il mio libro</a>
+      <p id="sintesi" class="sintesi"></p>
+    </div>
+    <nav aria-label="Pagine">
+      <a href="#scrivo" data-pagina="scrivo">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M13.6 3.4l3 3L7.2 15.8l-3.9.9.9-3.9z"/><path d="M11.8 5.2l3 3"/></svg>
+        Scrivo io
+      </a>
+      <a href="#domande" data-pagina="domande">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3.5 5.5a2 2 0 012-2h9a2 2 0 012 2v6.5a2 2 0 01-2 2H9l-3.5 3v-3a2 2 0 01-2-2z"/></svg>
+        Fammi domande
+        <span id="domanda-pronta" class="domanda-pronta" title="C'è una domanda pronta" hidden></span>
+      </a>
+      <a href="#chat" data-pagina="chat">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 4.5A1.5 1.5 0 014.5 3h8A1.5 1.5 0 0114 4.5v5a1.5 1.5 0 01-1.5 1.5H8l-3 2.5V11h-.5A1.5 1.5 0 013 9.5z"/><path d="M14 7h1.5A1.5 1.5 0 0117 8.5v4.5a1.5 1.5 0 01-1.5 1.5H15v2.5L12 14.5H9.5"/></svg>
+        Chat
+      </a>
+      <a href="#libro" data-pagina="libro">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 3.5h10.5v13H5a1.5 1.5 0 01-1.5-1.5V5A1.5 1.5 0 015 3.5z"/><path d="M3.5 13.5A1.5 1.5 0 015 12h10.5"/></svg>
+        Il libro
+      </a>
+      <a href="#anteprima" data-pagina="anteprima">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 5.5C8.2 4.3 5.8 4 3 4.2v10.6c2.8-.2 5.2.1 7 1.3 1.8-1.2 4.2-1.5 7-1.3V4.2c-2.8-.2-5.2.1-7 1.3z"/><path d="M10 5.5v10.6"/></svg>
+        Anteprima
+      </a>
+    </nav>
+    <div id="da-fare" class="da-fare" hidden></div>
+    <div class="barra-capitoli">
+      <h2>Capitoli</h2>
+      <div id="capitoli"></div>
+    </div>
+    <p id="stato" class="stato" role="status"></p>
+  </aside>
+  <main id="pagina"></main>
+  <script type="module" src="/statici/app.js"></script>
+</body>
+</html>
